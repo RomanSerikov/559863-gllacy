@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Рома Сериков](https://up.htmlacademy.ru/htmlcss/19/user/559863).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
