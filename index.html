@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Магазин Глэйси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -24,7 +27,7 @@
         </ul>
         <div class="site-navigation-submenu">
           <ul class="submenu-list">
-            <li class="submenu-item submenu-caption">Новинки</li>
+            <li class="submenu-caption">Новинки</li>
             <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
             <li class="submenu-item"><a href="#">Щербеты</a></li>
             <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
@@ -57,7 +60,7 @@
               </label>
               <input id="login-password" type="password" name="login-password" placeholder="Пароль">
             </p>
-            <button class="user-login" type="submit">Войти</button>
+            <button class="button user-login" type="submit">Войти</button>
           </form>
           <ul class="login-helper-list">
             <li class="login-helper-item"><a href="#">Забыли пароль?</a></li>
@@ -96,7 +99,7 @@
             <span class="visually-hidden">Слайд №3</span>
           </button>
         </p>
-        <button class="button" type="button">Давайте оба!</button>
+        <button class="button main-button" type="button">Давайте оба!</button>
       </section>
       <article class="banner-raspberries">
         <h2>Малинка даром!</h2>
@@ -122,7 +125,7 @@
               <span class="currency">/кг</span>
             </p>
             <p class="flavor-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a class="button" type="button">Быстрый просмотр</a>
+            <a class="button">Быстрый просмотр</a>
           </li>
           <li class="flavor-item" tabindex="0">
             <img class="flavor-picture" src="img/flavor-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
@@ -131,7 +134,7 @@
               <span class="currency">/кг</span>
             </p>
             <p class="flavor-description">Сливочно-кофейное с кусочками шоколада</p>
-            <a class="button" type="button">Быстрый просмотр</a>
+            <a class="button">Быстрый просмотр</a>
           </li>
           <li class="flavor-item" tabindex="0">
             <img class="flavor-picture" src="img/flavor-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое">
@@ -140,7 +143,7 @@
               <span class="currency">/кг</span>
             </p>
             <p class="flavor-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a class="button" type="button">Быстрый просмотр</a>
+            <a class="button">Быстрый просмотр</a>
           </li>
           <li class="flavor-item" tabindex="0">
             <img class="flavor-picture" src="img/flavor-4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
@@ -149,7 +152,7 @@
               <span class="currency">/кг</span>
             </p>
             <p class="flavor-description">Сливочное крем-брюле с карамельной подливкой</p>
-            <a class="button" type="button">Быстрый просмотр</a>
+            <a class="button">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -227,7 +230,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="social-links">
           <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -245,14 +248,14 @@
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
         Сделано в
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">HTML Academy</a>
         &#169; 2017
       </p>
     </footer>
 
     <section class="modal-feedback">
       <h2>Мы обязательно вам ответим!</h2>
-      <form class="feeback-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="feedback-author">
             <span class="visually-hidden">Имя</span>
