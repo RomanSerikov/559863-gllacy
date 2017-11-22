@@ -10,22 +10,26 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="payment.html">Доставка и оплата</a></li>
-          <li><a href="about.html">О компании</a></li>
-        </ul>
-        <ul class="search-navigation">
-          <li class="search-link"><a href="#">Поиск</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link"><a href="#">Вход</a></li>
-          <li class="cart-link"><a href="#">Пусто</a></li>
-        </ul>
-        <div class="site-navigation-submenu">
+        <div class="main-navigation-wrapper">
+          <div class="nav-container">
+            <a class="main-header-logo">
+              <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="payment.html">Доставка и оплата</a></li>
+              <li><a href="about.html">О компании</a></li>
+            </ul>
+            <ul class="search-navigation">
+              <li class="search-link"><a href="#">Поиск</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li class="login-link"><a href="#">Вход</a></li>
+              <li class="cart-link"><a href="#">Пусто</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="site-navigation-submenu">
           <ul class="submenu-list">
             <li class="submenu-caption">Новинки</li>
             <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
@@ -66,11 +70,11 @@
             <li class="login-helper-item"><a href="#">Забыли пароль?</a></li>
             <li class="login-helper-item"><a href="#">Новая регистрация</a></li>
           </ul>
-        </div>
+        </div> -->
       </nav>
       <div class="header-phones">
-        <p>С 10 до 20, ежедневно</p>
-        <p class="phone-numbers">8 812 450-25-25</p>
+        <!-- <p>С 10 до 20, ежедневно</p>
+        <p class="phone-numbers">8 812 450-25-25</p> -->
       </div>
     </header>
     <main class="container">
@@ -101,20 +105,22 @@
         </p>
         <button class="button main-button" type="button">Давайте оба!</button>
       </section>
-      <article class="banner raspberries">
-        <h2>Малинка даром!</h2>
-        <p class="banner-description">
-          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-        </p>
-        <a class="button">Хочу варенье!</a>
-      </article>
-      <article class="banner chocolates">
-        <h2>Шоколадки даром!</h2>
-        <p class="banner-description">
-          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-        </p>
-        <a class="button">Хочу шоколадки!</a>
-      </article>
+      <div class="index-columns">
+        <article class="banner raspberries">
+          <h2>Малинка даром!</h2>
+          <p class="banner-description">
+            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+          </p>
+          <a class="button">Хочу варенье!</a>
+        </article>
+        <article class="banner chocolates">
+          <h2>Шоколадки даром!</h2>
+          <p class="banner-description">
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
+          <a class="button">Хочу шоколадки!</a>
+        </article>
+      </div>
       <section class="popular-flavors">
         <h2 class="visually-hidden">Самые популярные вкусы</h2>
         <ul class="flavors-list">
@@ -168,14 +174,14 @@
           </li>
           <li class="feature-item">
             <p>
-              <img class="feature-icon" src="img/svg/eco.svg" width="49" height="49" alt="">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+              <img class="feature-icon" src="img/svg/cow.svg" width="49" height="49" alt="">
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </p>
           </li>
           <li class="feature-item">
             <p>
-              <img class="feature-icon" src="img/svg/cow.svg" width="49" height="49" alt="">
-              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              <img class="feature-icon" src="img/svg/eco.svg" width="49" height="49" alt="">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </p>
           </li>
           <li class="feature-item">
@@ -186,31 +192,33 @@
           </li>
         </ul>
       </section>
-      <article class="blogpost-preview">
-        <h2>Новое в нашем блоге</h2>
-        <p class="blogpost-title">
-          <a href="#">
-            10 способов сервировки<br>
-            фруктовых щербетов к<br>
-            столу
-          </a>
-        </p>
-      </article>
-      <article class="susbcription">
-        <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-        </p>
-        <form class="susbcription-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="susbcription-email">
-              <span class="visually-hidden">Электронная почта</span>
-            </label>
-            <input id="susbcription-email" type="email" name="susbcription-email" placeholder="Электронная почта">
+      <div class="index-columns">
+        <article class="blogpost-preview">
+          <h2>Новое в нашем блоге</h2>
+          <p class="blogpost-title">
+            <a href="#">
+              10 способов сервировки<br>
+              фруктовых щербетов к<br>
+              столу
+            </a>
           </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </article>
+        </article>
+        <article class="susbscription">
+          <h2 class="visually-hidden">Форма подписки на рассылку</h2>
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+          </p>
+          <form class="susbcription-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="susbcription-email">
+                <span class="visually-hidden">Электронная почта</span>
+              </label>
+              <input id="susbcription-email" type="email" name="susbcription-email" placeholder="Электронная почта">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </article>
+      </div>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <img src="img/svg/pin.svg" width="80" height="140" alt="">
@@ -252,7 +260,7 @@
         &#169; 2017
       </p>
     </footer>
-
+<!-- 
     <section class="modal-feedback">
       <h2>Мы обязательно вам ответим!</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -277,6 +285,7 @@
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    </section> -->
   </body>
 </html>
+
