@@ -101,204 +101,206 @@
       </div>
     </header>
     <main class="inner container">
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
-      </ul>
-
-      <h1>Сливочное мороженое</h1>
-
-      <section class="filters">
-        <!-- <h2 class="visually-hidden">Фильтры</h2> -->
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-sort">
-            <legend>Сортировка:</legend>
-            <select>
-              <option value="popular">по популярности</option>
-              <option value="cheap">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="richness">по жирности</option>
-            </select>
-          </fieldset>
-          <fieldset class="filter-price">
-            <legend>Цена: 100 руб. – 500 руб.</legend>
-            <label for="filter-price">
-              <span class="visually-hidden">Цена</span>
-            </label>
-            <input type="range" id="filter-price" min="100" max="500" step="10">
-          </fieldset>
-          <fieldset class="filter-richness">
-            <legend>Жирность:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="0" id="filter-richness-0">
-                <label for="filter-richness-0">0%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="10" id="filter-richness-10" checked>
-                <label for="filter-richness-10">до 10%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="30" id="filter-richness-30">
-                <label for="filter-richness-30">до 30%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="31" id="filter-richness-31">
-                <label for="filter-richness-31">выше 30%</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-flavors">
-            <legend>Наполнители:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                <label for="filter-chocolate">шоколадные</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-                <label for="filter-sugar">сахарные присыпки</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
-                <label for="filter-fruit">фрукты</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
-                <label for="filter-syrup">сиропы</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
-                <label for="filter-jam">джемы</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button filter-button" type="submit">Применить</button>
-        </form>
-      </section>
-      <section class="flavors">
-        <h2 class="visually-hidden">Вкусы мороженого</h2>
-        <ul class="flavors-list">
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-1.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">310 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
-            <p class="flavor-price">
-              <span class="price">380 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочно-кофейное с кусочками шоколада</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое">
-            <p class="flavor-price">
-              <span class="price">355 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-            <p class="flavor-price">
-              <span class="price">415 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное крем-брюле с карамельной подливкой</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-5.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">325 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное с брусничным джемом</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое">
-            <p class="flavor-price">
-              <span class="price">410 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочно-черничное с цельными ягодами черники</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое">
-            <p class="flavor-price">
-              <span class="price">375 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочно-лимонное с карамельной присыпкой</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-8.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">320 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное с шоколадной стружкой</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
-            <p class="flavor-price">
-              <span class="price">440 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочно-ванильное с кусочками шоколада</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-10.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">435 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочноe с ментоловым сиропом</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-11.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">355 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное с кусочками черного шоколада</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
-          <li class="flavor-item" tabindex="0">
-            <img class="flavor-picture" src="img/flavor-12.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <p class="flavor-price">
-              <span class="price">420 &#8381;</span>
-              <span class="currency">/кг</span>
-            </p>
-            <p class="flavor-description">Сливочное с мятным сиропом</p>
-            <a class="button">Быстрый просмотр</a>
-          </li>
+      <div class="container-wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-current">Сливочное</li>
         </ul>
-      </section>
-      <ul class="pagination-list">
-        <li class="pagination-nav-prev" tabindex="0">&#60;</li>
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-        <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-nav-next" tabindex="0">&#62;</li>
-      </ul>
+
+        <h1>Сливочное мороженое</h1>
+
+        <section class="filters">
+          <!-- <h2 class="visually-hidden">Фильтры</h2> -->
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-sort">
+              <legend>Сортировка:</legend>
+              <select>
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="richness">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="filter-price">
+              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <label for="filter-price">
+                <span class="visually-hidden">Цена</span>
+              </label>
+              <input type="range" id="filter-price" min="100" max="500" step="10">
+            </fieldset>
+            <fieldset class="filter-richness">
+              <legend>Жирность:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="0" id="filter-richness-0">
+                  <label for="filter-richness-0">0%</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="10" id="filter-richness-10" checked>
+                  <label for="filter-richness-10">до 10%</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="30" id="filter-richness-30">
+                  <label for="filter-richness-30">до 30%</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness" value="31" id="filter-richness-31">
+                  <label for="filter-richness-31">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-flavors">
+              <legend>Наполнители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                  <label for="filter-chocolate">шоколадные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+                  <label for="filter-sugar">сахарные присыпки</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+                  <label for="filter-fruit">фрукты</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
+                  <label for="filter-syrup">сиропы</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
+                  <label for="filter-jam">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button filter-button" type="submit">Применить</button>
+          </form>
+        </section>
+        <section class="flavors">
+          <h2 class="visually-hidden">Вкусы мороженого</h2>
+          <ul class="flavors-list">
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-1.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">310 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
+              <p class="flavor-price">
+                <span class="price">380 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочно-кофейное с кусочками шоколада</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое">
+              <p class="flavor-price">
+                <span class="price">355 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+              <p class="flavor-price">
+                <span class="price">415 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное крем-брюле с карамельной подливкой</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-5.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">325 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное с брусничным джемом</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое">
+              <p class="flavor-price">
+                <span class="price">410 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочно-черничное с цельными ягодами черники</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-7.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое">
+              <p class="flavor-price">
+                <span class="price">375 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочно-лимонное с карамельной присыпкой</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-8.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">320 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное с шоколадной стружкой</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
+              <p class="flavor-price">
+                <span class="price">440 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочно-ванильное с кусочками шоколада</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-10.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">435 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочноe с ментоловым сиропом</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-11.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">355 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное с кусочками черного шоколада</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+            <li class="flavor-item" tabindex="0">
+              <img class="flavor-picture" src="img/flavor-12.jpg" width="267" height="267" alt="Сливочное мороженое">
+              <p class="flavor-price">
+                <span class="price">420 &#8381;</span>
+                <span class="currency">/кг</span>
+              </p>
+              <p class="flavor-description">Сливочное с мятным сиропом</p>
+              <a class="button">Быстрый просмотр</a>
+            </li>
+          </ul>
+        </section>
+        <ul class="pagination-list">
+          <li class="pagination-nav-prev" tabindex="0">&#60;</li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-nav-next" tabindex="0">&#62;</li>
+        </ul>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
