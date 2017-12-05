@@ -897,6 +897,10 @@ input[type='radio'].visually-hidden {
   background-position: top center;
 }
 
+.yandex-map {
+  height: 430px;
+}
+
 .info-wrapper {
   position: relative;
   width: 1200px;
@@ -910,6 +914,7 @@ input[type='radio'].visually-hidden {
 }
 
 .info-block {
+  z-index: 5;
   display: flex;
   position: absolute;
   right: 27px;
@@ -1079,6 +1084,7 @@ input[type='radio'].visually-hidden {
 }
 
 .modal-feedback {
+  z-index: 10;
   display: none;
   position: fixed;
   margin-left: -238px;
@@ -1090,6 +1096,56 @@ input[type='radio'].visually-hidden {
   padding: 25px;
   padding-top: 17px;
   border-radius: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+  
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-form p {

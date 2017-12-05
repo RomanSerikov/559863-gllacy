@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -284,10 +286,10 @@
                 <b>8 812 450-25-25</b>
                 <span>(с 10 до 20 ежедневно)</span>
               </p>
-              <a href="#" class="button">Форма обратной связи</a>
+              <a href="#" class="button feedback-link">Форма обратной связи</a>
             </div>
           </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A85dc47a69b31cdccb350405cdb060475d7d11130222a13c52d4b8a7547ab4660&amp;source=constructor" height="430"></iframe>
+          <div class="yandex-map"></div>
         </section>
       </main>
       <footer class="main-footer">
@@ -364,8 +366,9 @@
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
-
     </div>
+    <script src="js/modal-feedback.js"></script>
+    <script src="js/map-pin.js"></script>
   </body>
 </html>
 
