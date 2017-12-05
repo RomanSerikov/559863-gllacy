@@ -566,6 +566,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .banner {
@@ -670,7 +671,7 @@ input[type='radio'].visually-hidden {
   text-align: center;
 }
 
-.flavor-description span {
+.flavor-description a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -771,6 +772,46 @@ input[type='radio'].visually-hidden {
   align-items: flex-start;
 }
 
+.feature-item:first-child .feature:before {
+  content: '';
+  margin-right: 8px;
+  min-width: 49px;
+  min-height: 49px;
+  background-image: url(../img/svg/ice-cream.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item:nth-child(2) .feature:before {
+  content: '';
+  margin-right: 8px;
+  min-width: 49px;
+  min-height: 49px;
+  background-image: url(../img/svg/cow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item:nth-child(3) .feature:before {
+  content: '';
+  margin-right: 8px;
+  min-width: 49px;
+  min-height: 49px;
+  background-image: url(../img/svg/eco.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item:nth-child(4) .feature:before {
+  content: '';
+  margin-right: 8px;
+  min-width: 49px;
+  min-height: 49px;
+  background-image: url(../img/svg/thermometer.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .feature span {
   margin-top: 15px;
 }
@@ -829,8 +870,7 @@ input[type='radio'].visually-hidden {
   width: 560px;
   min-height: 220px;
   padding: 5px;
-  background-image: url('../img/svg/bg-post.svg');
-  background-repeat: no-repeat;
+  background-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 5px, #fe9e90 5px, #fe9e90 10px, #f8f7f4 10px, #f8f7f4 15px, #92cdff 15px, #92cdff 20px);
   border-radius: 15px;
   box-sizing: border-box;
 }
@@ -1087,15 +1127,16 @@ input[type='radio'].visually-hidden {
   z-index: 10;
   display: none;
   position: fixed;
-  margin-left: -238px;
   color: #000000;
   background-color: #f8f7f4;
-  top: 340px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 427px;
   padding: 25px;
   padding-top: 17px;
   border-radius: 10px;
+  animation-fill-mode: backwards;
 }
 
 .modal-overlay {
@@ -1114,26 +1155,22 @@ input[type='radio'].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
+    transform: translate(-50%, -600%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -40%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1141,14 +1178,14 @@ input[type='radio'].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-51%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-49%, -50%);
   }
 }
 
@@ -1279,7 +1316,7 @@ input[type='radio'].visually-hidden {
 .inner-page .site-wrapper {
   background-image: none;
   background-image: url('../img/bg-lighter.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: top center;
 }
 
@@ -1550,6 +1587,16 @@ input[type='radio'].visually-hidden {
   background-image: url('../img/svg/checkbox-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1566,6 +1613,16 @@ input[type='radio'].visually-hidden {
   background-image: url('../img/svg/radio-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before {
+  opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::before {
@@ -1695,7 +1752,8 @@ input[type='radio'].visually-hidden {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 5px;
+  height: 5px;
 }
 
 .filter-price {
@@ -1707,12 +1765,12 @@ input[type='radio'].visually-hidden {
 }
 
 .filter-flavors {
-  width: 703px;
+  width: 708px;
 }
 
 .filter-button {
   display: inline-block;
-  width: 162px;
+  width: 157px;
   height: 34px;
   margin: 0;
   margin-top: 22px;
