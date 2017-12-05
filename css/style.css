@@ -1098,6 +1098,19 @@ input[type='radio'].visually-hidden {
   border-radius: 10px;
 }
 
+.modal-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+
+.overlay-show {
+  display: block;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
