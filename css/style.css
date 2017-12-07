@@ -661,6 +661,7 @@ input[type="radio"].visually-hidden {
 
 .inner.container {
   margin-top: 23px;
+  margin-bottom: 30px;
 }
 
 .index-columns {
@@ -1873,12 +1874,16 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  margin-right: 26px;
+  margin-right: 29px;
   padding-left: 25px;
 }
 
 .filter-richness .filter-option {
   margin-right: 19px;
+}
+
+.filter-flavors .filter-option:nth-child(2) {
+  margin-right: 28px;
 }
 
 .filter-option:last-child {
@@ -1959,13 +1964,13 @@ input[type="radio"].visually-hidden {
 
 .filters {
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .filter fieldset {
   border: none;
-  margin-right: 14px;
-  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-bottom: 8px;
 }
 
 .filters .filter-price,
@@ -1975,7 +1980,7 @@ input[type="radio"].visually-hidden {
 
 .filter-sort {
   position: relative;
-  width: 193px;
+  width: 177px;
 }
 
 .filter-sort select {
@@ -2009,7 +2014,7 @@ input[type="radio"].visually-hidden {
   padding-left: 16px;
   background-color: #a9bab0;
   height: 36px;
-  border-radius: 20px;
+  border-radius: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2017,11 +2022,11 @@ input[type="radio"].visually-hidden {
 .range-wrapper {
   position: relative;
   margin-left: -16px;
-  padding: 16px 21px;
+  padding: 18px 22px;
   background-color: #a9bab0;
   width: 218px;
   height: 36px;
-  border-radius: 20px;
+  border-radius: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2036,7 +2041,7 @@ input[type="radio"].visually-hidden {
   background-color: #a9bab0;
   width: 415px;
   height: 36px;
-  border-radius: 20px;
+  border-radius: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2048,10 +2053,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin-left: -16px;
   padding: 10px 25px;
+  padding-right: 19px;
   background-color: #a9bab0;
-  width: 708px;
   height: 36px;
-  border-radius: 20px;
+  border-radius: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2070,7 +2075,7 @@ input[type="radio"].visually-hidden {
 
 .range-toggle {
   position: absolute;
-  top: 7px;
+  top: 9px;
   width: 4px;
   height: 4px;
   background: #ababab;
@@ -2082,11 +2087,11 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle-min {
-  left: 34px;
+  left: 36px;
 }
 
 .range-toggle-max {
-  left: 132px;
+  left: 134px;
 }
 
 .range-toggle:hover {
@@ -2095,23 +2100,19 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price {
-  width: 219px;
+  width: 210px;
 }
 
 .filter-richness {
   width: 416px;
 }
 
-.filter-flavors {
-  width: 708px;
-}
-
 .filter-button {
   display: inline-block;
-  width: 157px;
-  height: 34px;
+  width: 142px;
+  height: 35px;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 21px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
