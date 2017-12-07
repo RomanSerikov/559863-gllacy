@@ -1,5 +1,5 @@
 ymaps.ready(init);
-var mapDiv = document.querySelector('.yandex-map');
+var mapDiv = document.querySelector(".yandex-map");
 var myMap, 
     myPlacemark;
 
@@ -10,8 +10,8 @@ function init() {
   }); 
   
   myPlacemark = new ymaps.Placemark([59.938691, 30.323044], {}, {
-    iconLayout: 'default#image',
-    iconImageHref: 'img/pin.png',
+    iconLayout: "default#image",
+    iconImageHref: "img/pin.png",
     iconImageSize: [218, 142],
     iconImageOffset: [-45, -132]
   });
@@ -19,7 +19,7 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
-var link = document.querySelector('.button.feedback-link');
+var link = document.querySelector(".button.feedback-link");
   
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
